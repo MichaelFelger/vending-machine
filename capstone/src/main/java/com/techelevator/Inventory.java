@@ -96,13 +96,14 @@ public class Inventory {
     }
 
     public void displayNameAndInventory() {
-        System.out.println("\nProduct:        Inventory:");
+        System.out.printf("\n %-20s %-8s", "Product:", "  Inventory:\n ____________________________________\n");
         for (Map.Entry<String, ItemForSale> entry : itemChoices.entrySet()) {
             ItemForSale item = entry.getValue();
             String itemName = item.getProductName();
             int itemInventory = item.getInventory();
-            System.out.printf("%18s  %3s\n", itemName, String.valueOf(itemInventory));
-        }
+            System.out.printf("| %-20s  %-8s     |\n", itemName, String.valueOf(itemInventory));
+        }            System.out.println("|____________________________________|");
+
     }
 
     public void subtractInventory(String productCode) {
