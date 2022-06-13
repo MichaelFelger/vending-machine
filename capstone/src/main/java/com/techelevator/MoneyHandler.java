@@ -51,7 +51,7 @@ public class MoneyHandler {
             receipt = "\nSorry, " + item.getProductName() + "are out of stock. Please select another option.";
         }
         else {
-            receipt = "\n" + (item.getProductName() + "  Price:$" + item.getPrice() + "  Current Balance:  $" + getBalance() + " " + item.getSound());
+            receipt = "\n" + (item.getProductName() + "  Price: $" + item.getPrice() + "  Current Balance: $" + getBalance() + "   ***" + item.getSound() + "***");
         }
 
         System.out.println(receipt);

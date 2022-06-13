@@ -33,7 +33,7 @@ public class Coins {
             }
 
         }
-        System.out.printf("Please Take Your Change: %.2f\n", balance);
+        System.out.printf("\nPlease Take Your Change: $%.2f\n", balance);
         for (Map.Entry<String, BigDecimal> entry : coinCount.entrySet()) {
             String key = entry.getKey();
             BigDecimal value = entry.getValue();
