@@ -12,7 +12,7 @@ import java.time.format.DateTimeFormatter;
 public class Logger {
     static final File LOG_FILE = new File("log.txt");
     static LocalDateTime myDate = LocalDateTime.now();
-    static DateTimeFormatter myFormatDate = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss a");
+    static DateTimeFormatter myFormatDate = DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm:ss a");
     static final String TIME_STAMP = myDate.format(myFormatDate);
 
     public void logMoneyIn(String moneyIn, BigDecimal newBalance) {

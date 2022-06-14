@@ -43,7 +43,7 @@ public class ShowRunner {
                 inventory.displayNameAndInventory();
             } else if (mainMenuChoice.equals("2")) {
                 mainMenuOn = false;
-            } else if(mainMenuChoice.equals("3")) {
+            } else if (mainMenuChoice.equals("3")) {
                 System.out.println("\nGoodbye! Please come again!");
                 mainMenuOn = true;
                 purchaseMenuOn = false;
@@ -79,7 +79,6 @@ public class ShowRunner {
                 inventory.displayAllInventoryData();
                 System.out.println("\nPlease Enter a Slot: \n");
                 String productCode = userInput.nextLine().toUpperCase();
-           //     mrMoney.chargeMoney(productCode, inventory);
                 try {
                     inventory.subtractInventory(productCode);
                     mrMoney.chargeMoney(productCode, inventory);
@@ -92,17 +91,19 @@ public class ShowRunner {
                 }
             } else if (productMenuChoice.equals("3")) {
                 BigDecimal finalBalance = coins.makeChange(mrMoney.getBalance());
-                mrLogger.logGiveChange(mrMoney.getBalance(),finalBalance);
+                mrLogger.logGiveChange(mrMoney.getBalance(), finalBalance);
                 mrMoney.setBalance(BigDecimal.ZERO);
                 purchaseMenuOn = false;
                 mainMenuOn = true;
-                openMainMenu();
+                break;
 
 
             } else {
                 System.out.println(optionUnavailable);
             }
         }
+
+
     }
 
 

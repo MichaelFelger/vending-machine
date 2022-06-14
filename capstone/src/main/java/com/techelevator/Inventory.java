@@ -11,7 +11,7 @@ public class Inventory {
     private File file;
     private Map<String, ItemForSale> itemChoices;
 
-     Inventory() {
+    Inventory() {
         this.file = new File("C:\\Users\\Student\\workspace\\capstone-1-team-02\\capstone\\vendingmachine.csv");
         this.itemChoices = new LinkedHashMap<>();
         try (Scanner dataInput = new Scanner(file)) {
@@ -81,7 +81,7 @@ public class Inventory {
     }
 
     public void displayAllInventoryData() {
-        System.out.printf(" %-7s %-20s %-10s %-12s\n", "Slot:", "Product:","Price:","Inventory:");
+        System.out.printf(" %-7s %-20s %-10s %-12s\n", "Slot:", "Product:", "Price:", "Inventory:");
         System.out.println(" _____________________________________________________");
         for (Map.Entry<String, ItemForSale> entry : itemChoices.entrySet()) {
             ItemForSale item = entry.getValue();
@@ -101,7 +101,8 @@ public class Inventory {
             String itemName = item.getProductName();
             int itemInventory = item.getInventory();
             System.out.printf("| %-20s  %-8s     |\n", itemName, String.valueOf(itemInventory));
-        }            System.out.println("|                                    |\n ____________________________________");
+        }
+        System.out.println("|                                    |\n ____________________________________");
 
     }
 
@@ -111,8 +112,8 @@ public class Inventory {
         if (currentInventory > 0) {
             item.setInventory(currentInventory - 1);
         }
-        }
     }
+}
 
 
 
