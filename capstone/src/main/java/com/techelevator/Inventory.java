@@ -10,7 +10,6 @@ import java.util.Scanner;
 public class Inventory {
     private File file;
     private Map<String, ItemForSale> itemChoices;
-    ;
 
      Inventory() {
         this.file = new File("C:\\Users\\Student\\workspace\\capstone-1-team-02\\capstone\\vendingmachine.csv");
@@ -102,7 +101,7 @@ public class Inventory {
             String itemName = item.getProductName();
             int itemInventory = item.getInventory();
             System.out.printf("| %-20s  %-8s     |\n", itemName, String.valueOf(itemInventory));
-        }            System.out.println("|____________________________________|");
+        }            System.out.println("|                                    |\n ____________________________________");
 
     }
 

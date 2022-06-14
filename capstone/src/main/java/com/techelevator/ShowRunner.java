@@ -22,8 +22,8 @@ public class ShowRunner {
         this.mainMenuGreeting = "\n /$$    /$$                           /$$                   /$$      /$$             /$$     /$$                  /$$$$$$   /$$$$$$   /$$$$$$ \n| $$   | $$                          | $$                  | $$$    /$$$            | $$    |__/                 /$$__  $$ /$$$_  $$ /$$$_  $$\n| $$   | $$  /$$$$$$  /$$$$$$$   /$$$$$$$  /$$$$$$         | $$$$  /$$$$  /$$$$$$  /$$$$$$   /$$  /$$$$$$$      | $$  \\ $$| $$$$\\ $$| $$$$\\ $$\n|  $$ / $$/ /$$__  $$| $$__  $$ /$$__  $$ /$$__  $$ /$$$$$$| $$ $$/$$ $$ |____  $$|_  $$_/  | $$ /$$_____/      |  $$$$$$/| $$ $$ $$| $$ $$ $$\n \\  $$ $$/ | $$$$$$$$| $$  \\ $$| $$  | $$| $$  \\ $$|______/| $$  $$$| $$  /$$$$$$$  | $$    | $$| $$             >$$__  $$| $$\\ $$$$| $$\\ $$$$\n  \\  $$$/  | $$_____/| $$  | $$| $$  | $$| $$  | $$        | $$\\  $ | $$ /$$__  $$  | $$ /$$| $$| $$            | $$  \\ $$| $$ \\ $$$| $$ \\ $$$\n   \\  $/   |  $$$$$$$| $$  | $$|  $$$$$$$|  $$$$$$/        | $$ \\/  | $$|  $$$$$$$  |  $$$$/| $$|  $$$$$$$      |  $$$$$$/|  $$$$$$/|  $$$$$$/\n    \\_/     \\_______/|__/  |__/ \\_______/ \\______/         |__/     |__/ \\_______/   \\___/  |__/ \\_______/       \\______/  \\______/  \\______/ \n";
         this.mainMenuScript = "\n\n***MAIN MENU***\n\n Please select a number: \n\n(1) Display Vending Machine Items \n(2) Purchase \n(3) Exit\n\n";
         this.purchaseMenuScript = "\n\n***PURCHASE MENU***\n\nPlease select a number: \n\n(1) Feed Money \n(2) Purchase Item \n(3) Finish Transaction\n\n";
-        this.moneyFeedPrompt = "\nPlease enter number of dollars you would like to feed:\n\n";
-        this.optionUnavailable = "\nInvalid input! Please enter a valid number!\n";
+        this.moneyFeedPrompt = "\n\nPlease enter number of dollars you would like to feed:\n\n";
+        this.optionUnavailable = "\n\nInvalid input! Please enter a valid number!\n";
         this.mainMenuOn = true;
         this.purchaseMenuOn = true;
         this.inventory = new Inventory();

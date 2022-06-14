@@ -35,7 +35,8 @@ public class MoneyHandler {
                 BigDecimal itemPrice = item.getPrice();
 
                 if ((balance.compareTo(itemPrice) < 0)) {
-                    System.out.println("INSUFFICIENT FUNDS!! Please select another option...");
+                    System.out.println("\nINSUFFICIENT FUNDS!! Please select another option...");
+                    break;
                 }
                 else if ((item.getInventory() < 1)){
                     System.out.println("SOLD OUT! Please select another item.");
@@ -43,6 +44,7 @@ public class MoneyHandler {
                 }
                 balance = balance.subtract(itemPrice);
             }
+
         }
     }
 
