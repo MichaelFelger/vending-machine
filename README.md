@@ -8,8 +8,6 @@ When provided a pipe dilineated set up items to sell, app reads in and populates
 
 Each unique item inherits from a superclass sale item and is polymorphic in the sound the machine makes when each item is vended.
 
-Running balance is calculated, and at end of transaction, correct change is dispensed in coins,
-
-in as few coins as possible, largest to smallest.
+Running balance is calculated, and at end of transaction, correct change is dispensed in coins, in as few coins as possible, largest to smallest.
 
 
